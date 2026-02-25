@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        /* Blue and white theme for Nigerian school */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0 0;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        /* Primary: Rich blue */
+        --primary: 0.45 0.18 250;
+        --primary-foreground: 0.99 0 0;
+        /* Secondary: Light blue */
+        --secondary: 0.92 0.05 240;
+        --secondary-foreground: 0.25 0 0;
+        --muted: 0.96 0.01 240;
+        --muted-foreground: 0.50 0.02 240;
+        /* Accent: Vibrant blue */
+        --accent: 0.65 0.20 250;
+        --accent-foreground: 0.99 0 0;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.90 0.02 240;
+        --input: 0.90 0.02 240;
+        --ring: 0.45 0.18 250;
+        --chart-1: 0.60 0.20 250;
+        --chart-2: 0.55 0.18 200;
+        --chart-3: 0.50 0.15 280;
+        --chart-4: 0.70 0.15 220;
+        --chart-5: 0.65 0.12 260;
+        --sidebar: 0.98 0.01 240;
+        --sidebar-foreground: 0.15 0 0;
+        --sidebar-primary: 0.45 0.18 250;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.92 0.05 240;
+        --sidebar-accent-foreground: 0.25 0 0;
+        --sidebar-border: 0.90 0.02 240;
+        --sidebar-ring: 0.45 0.18 250;
+    }
+
+    .dark {
+        --background: 0.12 0.02 240;
+        --foreground: 0.98 0.01 240;
+        --card: 0.18 0.03 240;
+        --card-foreground: 0.98 0.01 240;
+        --popover: 0.15 0.03 240;
+        --popover-foreground: 0.98 0.01 240;
+        /* Primary: Bright blue for dark mode */
+        --primary: 0.70 0.20 250;
+        --primary-foreground: 0.12 0.02 240;
+        --secondary: 0.25 0.05 240;
+        --secondary-foreground: 0.98 0.01 240;
+        --muted: 0.22 0.04 240;
+        --muted-foreground: 0.70 0.03 240;
+        --accent: 0.55 0.18 250;
+        --accent-foreground: 0.98 0.01 240;
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.98 0.01 240;
+        --border: 0.25 0.04 240;
+        --input: 0.25 0.04 240;
+        --ring: 0.70 0.20 250;
+        --chart-1: 0.65 0.22 250;
+        --chart-2: 0.60 0.20 200;
+        --chart-3: 0.55 0.18 280;
+        --chart-4: 0.75 0.18 220;
+        --chart-5: 0.70 0.15 260;
+        --sidebar: 0.15 0.03 240;
+        --sidebar-foreground: 0.98 0.01 240;
+        --sidebar-primary: 0.70 0.20 250;
+        --sidebar-primary-foreground: 0.12 0.02 240;
+        --sidebar-accent: 0.25 0.05 240;
+        --sidebar-accent-foreground: 0.98 0.01 240;
+        --sidebar-border: 0.25 0.04 240;
+        --sidebar-ring: 0.70 0.20 250;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
